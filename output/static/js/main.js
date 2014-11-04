@@ -1,0 +1,1 @@
+!function(){"use strict";NodeList.prototype.forEach=Array.prototype.forEach,HTMLCollection.prototype.forEach=Array.prototype.forEach,NodeList.prototype.on=function(o,t){this.forEach(function(r){r.addEventListener(o,t)})}}();
