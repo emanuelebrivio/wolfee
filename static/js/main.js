@@ -17,7 +17,7 @@
   
   reqwest({
       url: 'http://www.kimonolabs.com/api/8x3ce3zc?apikey=9e9e30f3542ec789be4de05d5c9f16e9'
-    , type: 'jsonp'
+    , type: 'json'
     , contentType: 'application/json'
     , crossOrigin: true
     , error: function (err) { }
