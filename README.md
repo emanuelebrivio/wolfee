@@ -1,7 +1,7 @@
 ##Wolfee  
 *a simple wallpaper feed*
 
-![](http://s15.postimg.org/85dasfty3/wolfee_screen.png)
+![](http://s3.postimg.org/uwzikkshd/wolfee_screen.png)
 
 ---
 
