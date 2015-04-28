@@ -3,6 +3,8 @@
 ##Wolfee  
 *a simple wallpaper feed*
 
+![](http://s15.postimg.org/85dasfty3/wolfee_screen.png)
+
 ---
 
 ##Details  
