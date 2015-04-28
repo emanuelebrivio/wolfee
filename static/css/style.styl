@@ -1,0 +1,139 @@
+@import ('nib')
+@import url('//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
+
+// Kuler Palette http://adobe.ly/1lKFLlo
+_accent = #EE283D
+_light = #F2F2F2
+_dark = #2A2E3E
+
+.sans-font
+  font-family 'Open Sans', sans-serif
+
+.pure-g [class *='pure-u'],
+.pure-g-r [class*="pure-u"]
+  @extends .sans-font
+
+html,
+body
+  width 100%
+  height 100%
+  @extends .sans-font
+
+.pure-form
+  input[type='text'], input[type='password'], input[type='email'], input[type='url'], input[type='date'], input[type='month'], input[type='time'], input[type='datetime'], input[type='datetime-local'], input[type='week'], input[type='number'], input[type='search'], input[type='tel'], input[type='color'], select, textarea
+    @extends .sans-font
+  button
+    @extends .sans-font
+
+.pure-button
+  @extends .sans-font
+
+h1, h2, h3,
+h4, h5, h6
+  font-weight 400
+
+_spacer = 5, 10, 20, 40, 60, 80, 100, 150
+
+for _val in _spacer
+  .spacer-{ _val }
+    height ( _val * 1px )
+
+.text-left
+  text-align left
+.text-center
+  text-align center
+.text-right
+  text-align right
+
+.copy
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  background _light
+  z-index 10
+  padding 20px
+  img
+    display block
+  a.bybamboo
+    position absolute
+    display block
+    width 50px
+    height 50px
+    bottom 20px
+    left 20px
+    right 20px
+    cursor pointer
+    border-radius 25px
+    background _light
+    transition background 0.5s ease
+    
+    &:hover
+      background darken(_light, 5%)
+
+#app
+  padding-right 90px
+
+.page
+  width 100%
+  height 100vh
+  
+  overflow hidden
+  position relative
+  
+  background-repeat no-repeat
+  background-position center
+  background-size cover
+
+  .overlay
+    background rgba(#2A2E3E, 0.8)
+    width 100%
+    height 100%
+    opacity 0
+    transition opacity 0.5s ease
+    
+    & > .pure-g
+      height 100%
+      & > *
+        height 100%
+        
+    a.button-bar
+      width 100%
+      height 100%
+      display block
+      position relative
+      cursor pointer
+      text-align center
+      background rgba(_dark, 0)
+      transition background 0.5s ease
+      
+      span
+        position absolute
+        display block
+        top 50%
+        left 20px
+        right 20px
+        transform translate(0, -50%)
+        text-transform uppercase
+        text-align center
+        font-weight 600
+        font-size 14px
+        color _light
+        opacity 0.4
+        transition opacity 0.5s ease
+        i
+          display block
+          font-size 40px
+          
+      &:hover
+        background rgba(_dark, 0.8)
+        span
+          opacity 1
+          
+  
+  &:hover
+    .overlay
+      opacity 1
+  
+  
+

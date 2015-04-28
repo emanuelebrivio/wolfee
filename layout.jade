@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title Welcome on Wolfee
+    
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/grids-responsive-min.css')
+    link(rel='stylesheet', href='//fontastic.s3.amazonaws.com/dLgPkTRAdxeESGRmYMvpvS/icons.css')
+    link(rel='stylesheet', href='static/css/style.css')
+    link(rel='shortcut icon', href='static/img/favicon.png', type='image/png')
+    
+    block afterhead
+
+  body
+
+    .copy
+      img(src='static/img/wolfee-logo.png', width='50', height='50')
+      
+      a.bybamboo
+        img(src='static/img/bybamboo.png', width='50', height='50')
+    
+    #app
+      block app
+
+    script(src='//cdnjs.cloudflare.com/ajax/libs/reqwest/1.1.5/reqwest.js')
+    script(src='static/js/main.js')
+    block scripts
