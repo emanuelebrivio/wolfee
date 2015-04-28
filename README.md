@@ -5,9 +5,7 @@
 
 ---
 
-##Details
-
-**Source**  
+##Details  
 Images are crawled from unsplash using kimonolabs and then rendered on the page
 
 ---
