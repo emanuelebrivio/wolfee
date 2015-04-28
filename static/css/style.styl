@@ -52,7 +52,7 @@ for _val in _spacer
   bottom 0
   background _light
   z-index 10
-  padding 20px
+  padding 10px
   img
     display block
   a.bybamboo
@@ -60,9 +60,8 @@ for _val in _spacer
     display block
     width 50px
     height 50px
-    bottom 20px
-    left 20px
-    right 20px
+    bottom 10px
+    right 10px
     cursor pointer
     border-radius 25px
     background _light
@@ -72,7 +71,7 @@ for _val in _spacer
       background darken(_light, 5%)
 
 #app
-  padding-right 90px
+  padding-right 70px
 
 .page
   width 100%
@@ -139,4 +138,12 @@ for _val in _spacer
       opacity 1
   
   
-
+@media screen and (max-width: 580px)
+  .copy
+    top 0
+    left 0
+    right 0
+    bottom auto
+  #app
+    padding-right 0
+    
