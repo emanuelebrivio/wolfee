@@ -1,5 +1,3 @@
-![wolfee](https://raw.githubusercontent.com/emanuelebrivio/wolfee/gh-pages/static/img/wolfee-logo.png)  
-
 ##Wolfee  
 *a simple wallpaper feed*
 
