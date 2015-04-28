@@ -4,49 +4,17 @@ block title
   | :: Underwood
 
 block app
-  .page(style='background-image: url("https://download.unsplash.com/photo-1429371527702-1bfdc0eeea7d");')
+  .page.tpl
     .overlay
       .pure-g
         .pure-u-1-2
-          a.button-bar
+          a.button-bar.copy-to-clipboard
             span
               i.wf-link
               | Link
             
         .pure-u-1-2
-          a.button-bar
-            span
-              i.wf-down-circled
-              | Download
-            
-    
-  .page(style='background-image: url("https://download.unsplash.com/photo-1429043794791-eb8f26f44081");')
-    .overlay
-      .pure-g
-        .pure-u-1-2
-          a.button-bar
-            span
-              i.wf-link
-              | Link
-            
-        .pure-u-1-2
-          a.button-bar
-            span
-              i.wf-down-circled
-              | Download
-            
-    
-  .page(style='background-image: url("https://download.unsplash.com/photo-1428908799722-0a74e26ce7f6");')
-    .overlay
-      .pure-g
-        .pure-u-1-2
-          a.button-bar
-            span
-              i.wf-link
-              | Link
-            
-        .pure-u-1-2
-          a.button-bar
+          a.button-bar(download)
             span
               i.wf-down-circled
               | Download
