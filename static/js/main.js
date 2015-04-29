@@ -24,10 +24,11 @@
     success: function (response) {
       response.results.collection1.forEach(function (el) {
         var imageurl = el.imageurl.href;
+        var thumburl = el.thumbnail.src;
         var node = tpl.cloneNode(true);
         
         node.querySelectorAll('.button-bar').forEach(function (btn) { btn.setAttribute('href', imageurl); });
-        node.style.backgroundImage = 'url("' + imageurl + '")';
+        node.style.backgroundImage = 'url("' + thumburl + '")';
         node.classList.remove('tpl');
         
         node.querySelector('.copy-to-clipboard').addEventListener('click', function (e) {
