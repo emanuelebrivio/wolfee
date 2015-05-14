@@ -23,8 +23,9 @@
     dataType: 'jsonp',
     success: function (response) {
       response.results.collection1.forEach(function (el) {
+        console.log('Image', el);
         var imageurl = el.imageurl.href;
-        var thumburl = el.thumbnail.src;
+        var thumburl = el.thumbnail.src || imageurl;
         var node = tpl.cloneNode(true);
         
         node.querySelectorAll('.button-bar').forEach(function (btn) { btn.setAttribute('href', imageurl); });
